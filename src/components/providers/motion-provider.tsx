@@ -1,17 +1,10 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode } from "react";
 
 export function MotionProvider({ children }: { children: ReactNode }) {
   const prefersReducedMotion = useReducedMotion();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
 
   return (
     <motion.div

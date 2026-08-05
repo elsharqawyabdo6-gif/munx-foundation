@@ -1,16 +1,13 @@
 "use client";
 
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect } from "react";
 
 type Props = {
   children: ReactNode;
 };
 
 export function ThemeProvider({ children }: Props) {
-  const [mounted, setMounted] = useState(false);
-
   useEffect(() => {
-    setMounted(true);
     try {
       const stored = localStorage.getItem("munx-theme");
       const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -36,8 +33,6 @@ export function ThemeProvider({ children }: Props) {
       localStorage.setItem("munx-theme", mode);
     } catch (e) {}
   }
-
-  if (!mounted) return <>{children}</>;
 
   return (
     <ThemeContextProvider applyTheme={applyTheme}>
