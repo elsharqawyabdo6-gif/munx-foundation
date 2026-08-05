@@ -1,0 +1,33 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      # NOTE: Next.js on Cloudflare Pages may require the official Cloudflare Next adapter
+      # or Pages integration. Configure the `directory` below to match your Pages setup.
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}      # create this in GitHub secrets
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}    # your Cloudflare account ID
+          projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+          directory: '.next'

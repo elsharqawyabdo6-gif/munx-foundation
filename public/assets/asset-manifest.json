@@ -1,0 +1,44 @@
+{
+  "assets": [
+    {
+      "dest": "og-image.jpg",
+      "url": "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=2400&auto=format&fit=crop"
+    },
+    {
+      "dest": "hero-poster.jpg",
+      "url": "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=2000&auto=format&fit=crop"
+    },
+    {
+      "dest": "portfolio-aurora.jpg",
+      "url": "https://images.unsplash.com/photo-1504198453319-5ce911bafcde?w=2000&auto=format&fit=crop"
+    },
+    {
+      "dest": "portfolio-lumen.jpg",
+      "url": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=2000&auto=format&fit=crop"
+    },
+    {
+      "dest": "portfolio-velora.jpg",
+      "url": "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=2000&auto=format&fit=crop"
+    },
+    {
+      "dest": "case-nova.jpg",
+      "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=2000&auto=format&fit=crop"
+    },
+    {
+      "dest": "blog-future.jpg",
+      "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1800&auto=format&fit=crop"
+    },
+    {
+      "dest": "about-team.jpg",
+      "url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&auto=format&fit=crop"
+    },
+    {
+      "dest": "contact-illustration.jpg",
+      "url": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=1600&auto=format&fit=crop"
+    },
+    {
+      "dest": "sample-video.mp4",
+      "url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    }
+  ]
+}

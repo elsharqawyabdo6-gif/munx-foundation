@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+  <rect width="1280" height="720" fill="#120224"/>
+  <circle cx="640" cy="360" r="80" fill="#7b3cff" opacity="0.95"/>
+  <path d="M630 330 L690 360 630 390 Z" fill="#fff"/>
+  <text x="50%" y="82%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, sans-serif" font-size="28" fill="#b45cff">Placeholder Video Poster</text>
+</svg>
