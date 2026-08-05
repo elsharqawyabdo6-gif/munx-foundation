@@ -59,4 +59,6 @@ Other quick deploy options
 
 - Vercel: the fastest path is to import this repository into Vercel (vercel.com) and let Vercel handle builds and automatic previews. Vercel will provide a URL after deploy.
 
-If you want, I can add or update a workflow for any of these providers and guide you through adding the required secrets — tell me which provider to configure and I'll prepare the exact steps or workflow file.
+The project now includes `vercel.json` and a GitHub Action workflow at `.github/workflows/deploy-vercel.yml` for automatic deployment.
+
+If you want, I can also help you configure the required GitHub secrets (`VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`) and validate the Vercel setup.

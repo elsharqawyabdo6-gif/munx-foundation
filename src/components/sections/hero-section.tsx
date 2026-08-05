@@ -7,7 +7,7 @@ export function HeroSection() {
     <section className="relative overflow-hidden border-b border-border/30 min-h-[90vh] flex items-center">
       {/* Cinematic video background */}
       <video
-        className="absolute inset-0 w-full h-full object-cover opacity-40"
+        className="absolute inset-0 hidden w-full h-full object-cover opacity-40 sm:block"
         src="/videos/hero-background.mp4"
         autoPlay
         muted
