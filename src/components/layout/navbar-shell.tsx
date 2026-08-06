@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SocialIcons } from "@/components/ui/social-icons";
 import ThemeToggle from "@/components/ui/theme-toggle";
+import MobileNav from "@/components/layout/mobile-nav";
 
 const links = [
   { label: "Services", href: "/services" },
@@ -33,6 +34,8 @@ export function NavbarShell() {
             </Link>
           ))}
         </nav>
+        {/* Mobile menu button */}
+        <MobileNav links={links} />
         <div className="ml-3 flex items-center text-sm text-muted-foreground">
           <div className="hidden sm:flex items-center gap-3">
             <SocialIcons />
