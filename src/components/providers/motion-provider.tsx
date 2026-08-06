@@ -8,9 +8,10 @@ export function MotionProvider({ children }: { children: ReactNode }) {
 
   return (
     <motion.div
-      initial={prefersReducedMotion ? false : { opacity: 0 }}
-      animate={prefersReducedMotion ? { opacity: 1 } : { opacity: 1 }}
-      transition={{ duration: 0.35, ease: "easeOut" }}
+      initial={false}
+      animate={{ opacity: 1 }}
+      transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.35, ease: "easeOut" }}
+      style={{ opacity: 1 }}
     >
       {children}
     </motion.div>
